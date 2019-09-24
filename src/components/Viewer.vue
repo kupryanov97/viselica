@@ -4,10 +4,10 @@
       <span v-for="(item, index) in word">{{item}}</span>
     </div>
     <div class="errors">
-      <div v-for="(item,id) in error" :key="id" >
+      <div v-for="(i tem,id) in error" :key="id" >
       <img  class="image" v-if="errors===item.num" :src="item.link">
       </div>
-      <span>Число ошибок:{{errors}}</span> <br>
+      <span> Число ошибок:{{errors}}</span> <br>
       <span>Выберите букву:</span> <br>
     </div>
     <div class="alph">
@@ -49,7 +49,7 @@ export default {
         },
         {
           num:6,
-          link:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hangman-6.png/50px-Hangman-6.png',
+          link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hangman-6.png/50px-Hangman-6.png',
         },
       ]
     };
